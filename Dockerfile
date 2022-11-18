@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     zip \
     libicu-dev \
+    libxcursor-dev \
     rsync \
     && rm -rf /var/lib/apt/lists/*
 
