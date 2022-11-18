@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     wget \
     zip \
+    libicu-dev \
     rsync \
     && rm -rf /var/lib/apt/lists/*
 
