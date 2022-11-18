@@ -15,6 +15,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rsync \
     && rm -rf /var/lib/apt/lists/*
 
+RUN wget https://github.com/PowerShell/PowerShell/releases/download/v7.3.0/powershell_7.3.0-1.deb_amd64.deb \
+    && dpkg -i powershell-lts_7.3.0-1.deb_amd64.deb \
+    && apt-get install -f \
+    && rm powershell-lts_7.3.0-1.deb_amd64.deb
+
+
 # When in doubt see the downloads page
 # https://downloads.tuxfamily.org/godotengine/
 ARG GODOT_VERSION="4.0"
@@ -41,3 +47,4 @@ RUN mkdir ~/.cache \
     && mv templates/* ~/.local/share/godot/export_templates/${GODOT_VERSION}.${RELEASE_NAME}.mono \
     && rm -f Godot_v${GODOT_VERSION}-${RELEASE_NAME}_mono_export_templates.tpz Godot_v${GODOT_VERSION}-${RELEASE_NAME}_mono_linux_headless_64.zip
 
+RUN echo ${GODOT_VERSION}${RELEASE_NAME}
