@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN wget https://github.com/PowerShell/PowerShell/releases/download/v7.3.0/powershell_7.3.0-1.deb_amd64.deb \
     && dpkg -i powershell_7.3.0-1.deb_amd64.deb \
     && apt-get install -f \
-    && rm powershell_7.3.0-1.deb_amd64.deb.deb
+    && rm powershell_7.3.0-1.deb_amd64.deb
 
 
 # When in doubt see the downloads page
