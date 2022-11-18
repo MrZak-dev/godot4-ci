@@ -4,17 +4,12 @@ USER root
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
-    git \
-    git-lfs \
-    python \
-    python-openssl \
     unzip \
     wget \
     zip \
     libicu-dev \
     libxcursor-dev \
     libxinerama-dev \
-    rsync \
     && rm -rf /var/lib/apt/lists/*
 
 RUN wget https://github.com/PowerShell/PowerShell/releases/download/v7.3.0/powershell_7.3.0-1.deb_amd64.deb \
