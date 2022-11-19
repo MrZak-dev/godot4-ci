@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxrandr-dev \
     libxi-dev \
     libudev-dev \
+    docker.io \
     && rm -rf /var/lib/apt/lists/*
 
 RUN wget https://github.com/PowerShell/PowerShell/releases/download/v7.3.0/powershell_7.3.0-1.deb_amd64.deb \
