@@ -8,10 +8,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     zip \
     libgssapi-krb5-2 \
+    libx11-dev \
     libicu-dev \
     libxcursor-dev \
     libxinerama-dev \
     libxrandr-dev \
+    libexecinfo-dev \
+    libxi-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN wget https://github.com/PowerShell/PowerShell/releases/download/v7.3.0/powershell_7.3.0-1.deb_amd64.deb \
