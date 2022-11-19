@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     wget \
     zip \
+    libgssapi-krb5-2 \
     libicu-dev \
     libxcursor-dev \
     libxinerama-dev \
