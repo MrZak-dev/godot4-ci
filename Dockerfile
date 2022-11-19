@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:focal
 
 USER root
 ENV DEBIAN_FRONTEND=noninteractive
