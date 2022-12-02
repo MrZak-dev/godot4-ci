@@ -30,12 +30,12 @@ ARG GODOT_VERSION="4.0"
 
 # Example values: stable, beta3, rc1, alpha2, etc.
 # Also change the SUBDIR property when NOT using stable
-ARG RELEASE_NAME="beta6"
+ARG RELEASE_NAME="beta7"
 
 # This is only needed for non-stable builds (alpha, beta, RC)
 # e.g. SUBDIR "/beta3"
 # Use an empty string "" when the RELEASE_NAME is "stable"
-ARG SUBDIR="/beta6"
+ARG SUBDIR="/beta7"
 
 RUN wget https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}${SUBDIR}/mono/Godot_v${GODOT_VERSION}-${RELEASE_NAME}_mono_linux_x86_64.zip \
     && wget https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}${SUBDIR}/mono/Godot_v${GODOT_VERSION}-${RELEASE_NAME}_mono_export_templates.tpz
